@@ -6,7 +6,8 @@ const url = process.env.MONGODB_URI ||
 const testConnect = MongoClient.connect(url, (err, db) => {
     console.log("Connected to mongo server");
     db.close();
-})
+});
+
 const config = {
     env: process.env.NODE_ENV || 'development',
     port: process.env.PORT || 3000,

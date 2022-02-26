@@ -2,8 +2,8 @@ import config from './../config/config';
 import app from './express';
 import mongoose from 'mongoose'
 
-mongoose.Promise = global.Promise;
-mongoose.connect(config.mongoUri, {
+mongoose.Promise = global.Promise
+mongoose.connect("mongodb+srv://magnaRecruiter:hjasmmbgGFDFDb21@bcftestdb.whb3u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
